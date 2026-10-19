@@ -4,8 +4,8 @@ on:
   push:
     branches: [ main, master ]
   schedule:
-    # 매일 오전 8시 (한국 시간 KST = UTC+9 -> 23:00 UTC) 자동 글 생성 및 배포
-    - cron: '0 23 * * *'
+    # 매일 아침 6시 정각 (한국 시간 KST 06:00 = UTC 21:00) 자동 게시글 발행 및 갱신
+    - cron: '0 21 * * *'
   workflow_dispatch: # GitHub 웹에서 버튼 클릭 한 번으로 즉시 실행 가능
 
 permissions:
