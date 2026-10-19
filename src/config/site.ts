@@ -5,7 +5,7 @@ export const SITE_CONFIG = {
   title: '핀덱스 (FINDEX) · 금융·세무·AI 계산 포털',
   shortName: 'FINDEX',
   description: '핀덱스(FINDEX)는 2026년 최신 연봉 실수령액, 퇴직금·실업급여, 대출이자·DSR, 해외직구 관부가세, 배당 복리 및 AI 비용 계산기를 제공하는 데이터 포털입니다.',
-  url: import.meta.env.PUBLIC_SITE_URL || 'https://bakaseon.github.io',
+  url: import.meta.env.PUBLIC_SITE_URL || 'https://findex-kr.github.io',
   lang: 'ko',
   author: 'FINDEX Research Lab',
   contactEmail: 'e.jang.soltec21@gmail.com',
