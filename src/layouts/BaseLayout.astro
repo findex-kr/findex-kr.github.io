@@ -45,13 +45,17 @@ const currentPath = Astro.url.pathname;
       <meta name="naver-site-verification" content={SITE_CONFIG.verification.naver} />
     )}
 
-    <!-- Google AdSense 자동 스크립트 (ID 설정 시 자동 활성화) -->
+    <!-- Google AdSense 소유권 메타태그 & 자동 광고 스크립트 -->
     {SITE_CONFIG.ads.googleAdSenseId && (
-      <script
-        async
-        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${SITE_CONFIG.ads.googleAdSenseId}`}
-        crossorigin="anonymous"
-      ></script>
+      <>
+        <meta name="google-adsense-account" content={SITE_CONFIG.ads.googleAdSenseId} />
+        <script
+          is:inline
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${SITE_CONFIG.ads.googleAdSenseId}`}
+          crossorigin="anonymous"
+        ></script>
+      </>
     )}
 
     <!-- 구글 리치 스니펫(JSON-LD) 구조화 데이터 -->

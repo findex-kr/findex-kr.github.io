@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import AdSlot from '../components/AdSlot.astro';
+import AffiliateCard from '../components/AffiliateCard.astro';
 import { getCollection } from 'astro:content';
 
 const posts = (await getCollection('blog')).sort(
@@ -109,6 +110,8 @@ const tools = [
       ))}
     </div>
   </section>
+
+  <AffiliateCard type="salary" />
 
   <AdSlot position="bottom" />
 </BaseLayout>
