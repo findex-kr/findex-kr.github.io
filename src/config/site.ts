@@ -12,8 +12,8 @@ export const SITE_CONFIG = {
 
   // 1. 검색엔진 소유권 확인 메타태그 (구글 서치콘솔 & 네이버 서치어드바이저 코드만 넣으면 자동 적용)
   verification: {
-    google: import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION || '',
-    naver: import.meta.env.PUBLIC_NAVER_SITE_VERIFICATION || '',
+    google: import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION || 'yqkhsOaN2L947vEwYzeg3zImGM7cowQ4TVskWb8PMKQ',
+    naver: import.meta.env.PUBLIC_NAVER_SITE_VERIFICATION || 'a8a5a0f96b98c647edbad5299eef9e282e76169e',
   },
 
   // 2. 광고 네트워크 설정 (승인 후 ID만 넣으면 즉시 실제 광고 송출)
